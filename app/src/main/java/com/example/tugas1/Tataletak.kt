@@ -105,7 +105,7 @@ fun TataLetakRowColumn(modifier: Modifier = Modifier) {
         modifier = modifier.fillMaxWidth(),
         horizontalArrangement = Arrangement.SpaceEvenly
     ) {
-        
+
         Column {
             Text(text = "Komponen1Kolom1")
             Text(text = "Komponen2Kolom1")
@@ -120,5 +120,27 @@ fun TataLetakRowColumn(modifier: Modifier = Modifier) {
     }
 }
 
+@Composable
+fun TataLetakBoxColumnRow(modifier: Modifier = Modifier) {
+    val gambar = painterResource(id = R.drawable.notasibalok)
+
+    Column {
+        Box(
+            modifier = modifier
+                .fillMaxWidth()
+                .height(110.dp)
+                .background(Color.Yellow),
+            contentAlignment = Alignment.Center
+        ) {
+            // Contoh tampilan gambar di dalam Box
+            Image(
+                painter = gambar,
+                contentDescription = "Gambar Notasi Balok",
+                modifier = modifier.fillMaxWidth(),
+                contentScale = ContentScale.Crop
+            )
+
+
+}
 
 

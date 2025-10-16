@@ -124,46 +124,9 @@ fun TataLetakRowColumn(modifier: Modifier = Modifier) {
 fun TataLetakBoxColumnRow(modifier: Modifier = Modifier) {
     val gambar = painterResource(id = R.drawable.notasibalok)
 
-    Column {
-        Box(
-            modifier = modifier
-                .fillMaxWidth()
-                .height(110.dp)
-                .background(Color.Yellow),
-            contentAlignment = Alignment.Center
-        ) {
-            // Contoh tampilan gambar di dalam Box
-            Image(
-                painter = gambar,
-                contentDescription = "Gambar Notasi Balok",
-                modifier = modifier.fillMaxWidth(),
-                contentScale = ContentScale.Crop
-            )
-            Column {
-                // Baris pertama
-                Row(
-                    modifier = modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.SpaceEvenly
-                ) {
-                    Text(text = "Col1_Row1_Komponen1")
-                    Text(text = "Col1_Row1_Komponen2")
-                    Text(text = "Col1_Row1_Komponen3")
-                }
-
-                // Baris kedua
-                Row(
-                    modifier = modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.SpaceEvenly
-                ) {
-                    Text(text = "Col1_Row2_Komponen1")
-                    Text(text = "Col1_Row2_Komponen2")
-                    Text(text = "Col1_Row2_Komponen3")
-                }
-            }
-        }
-    }
-
 
 }
+
+
 
 

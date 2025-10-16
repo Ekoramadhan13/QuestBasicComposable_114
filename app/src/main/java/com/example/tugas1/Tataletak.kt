@@ -123,9 +123,17 @@ fun TataLetakRowColumn(modifier: Modifier = Modifier) {
 @Composable
 fun TataLetakBoxColumnRow(modifier: Modifier = Modifier) {
     val gambar = painterResource(id = R.drawable.notasibalok)
+    Column {
+        Box(
+            modifier = modifier
+                .fillMaxWidth()
+                .height(110.dp)
+                .background(Color.Yellow),
+            contentAlignment = Alignment.Center
+        ) {
 
 
-}
+        }
 
 
 

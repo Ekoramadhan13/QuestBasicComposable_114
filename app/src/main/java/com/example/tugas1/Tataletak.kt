@@ -131,6 +131,15 @@ fun TataLetakBoxColumnRow(modifier: Modifier = Modifier) {
                 .background(Color.Yellow),
             contentAlignment = Alignment.Center
         ) {
+            // Contoh tampilan gambar di dalam Box
+            Image(
+                painter = gambar,
+                contentDescription = "Gambar Notasi Balok",
+                modifier = modifier.fillMaxWidth(),
+                contentScale = ContentScale.Crop
+            )
+
+        }
 
 
         }

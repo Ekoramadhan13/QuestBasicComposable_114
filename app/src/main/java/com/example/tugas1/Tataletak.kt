@@ -25,6 +25,7 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun TataLetakColumn(modifier: Modifier = Modifier) {
+
     Column(
         modifier = modifier
             .padding(top = 20.dp, start = 20.dp, end = 20.dp)
@@ -43,3 +44,5 @@ fun TataLetakColumn(modifier: Modifier = Modifier) {
         Text(text = "Komponen4")
     }
 }
+
+

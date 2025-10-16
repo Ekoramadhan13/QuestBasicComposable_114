@@ -138,8 +138,18 @@ fun TataLetakBoxColumnRow(modifier: Modifier = Modifier) {
                 modifier = modifier.fillMaxWidth(),
                 contentScale = ContentScale.Crop
             )
+            Column {
+                // Baris pertama
+                Row(
+                    modifier = modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceEvenly
+                ) {
+                    Text(text = "Col1_Row1_Komponen1")
+                    Text(text = "Col1_Row1_Komponen2")
+                    Text(text = "Col1_Row1_Komponen3")
+                }
 
-        }
+            }
 
 
         }

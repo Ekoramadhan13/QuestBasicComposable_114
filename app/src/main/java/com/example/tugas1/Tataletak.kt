@@ -1,6 +1,8 @@
 package com.example.mylayout
 
 import androidx.compose.foundation.Image
+import androidx.compose.ui.res.painterResource
+//import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -22,6 +24,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.tugas1.R
 
 @Composable
 fun TataLetakColumn(modifier: Modifier = Modifier) {
@@ -122,7 +125,7 @@ fun TataLetakRowColumn(modifier: Modifier = Modifier) {
 
 @Composable
 fun TataLetakBoxColumnRow(modifier: Modifier = Modifier) {
-    val gambar = painterResource(id = R.drawable.notasibalok)
+    val gambar = painterResource(R.drawable.qwerty)
     Column {
         Box(
             modifier = modifier
